@@ -67,4 +67,5 @@ SQL Query (.sql)
 
 CSV Data File (.csv)
 
-Webpage (mybot.html) with embedded chatbot
+Webpage (mybot.html) with embedded chatbot - http://myweb.usf.edu/~jaivinaygudiveka/mybot.html![image](https://github.com/user-attachments/assets/1ed8b238-e08d-44e0-869b-3600164ba046)
+
