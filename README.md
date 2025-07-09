@@ -1,71 +1,61 @@
-🤖 AI Inventory Assistant Bot (Built with Botpress)
-This project is an AI-powered support bot developed using Botpress, designed to assist with answering inventory-related questions based on structured business data. It provides users with fast, accurate responses related to inventory levels, stock gaps, and reorder points.
+# 🧠 AI Inventory Assistant Bot
 
-📌 Purpose
-The goal is to simulate a customer or business-facing assistant that interacts with a dataset and helps answer questions such as:
+This project demonstrates an AI chatbot built using **Botpress**, deployed via a custom HTML webpage. The chatbot helps answer inventory-related questions using a small dataset focused on item stock and reorder information.
 
-Which items are low in stock?
+---
 
-What is the current stock of a particular item?
+## 🔍 Analysis Question
 
-Which item is closest to its reorder point?
+**What are the top 10 inventory items closest to their reorder point?**  
+This bot helps identify items nearing restock thresholds to improve inventory decisions.
 
-It demonstrates how conversational AI can be integrated into decision-support systems using low-code platforms.
+---
 
-📊 Dataset & Analysis Focus
-The dataset used includes inventory fields such as:
+## 📁 Dataset Details
 
-Item Number
+- Format: CSV (10 rows)  
+- Columns:  
+  - Item Number  
+  - Description  
+  - Quantity on Hand  
+  - Reorder Point  
+  - Gap to Reorder  
 
-Description
+This data was uploaded into a Botpress Table and used to build the bot's Knowledge Base.
 
-Quantity on Hand
+---
 
-Reorder Point
+## 💬 Example Questions
 
-Gap to Reorder
+- "Which item is closest to reorder?"  
+- "Show stock for item 77"  
+- "What is the reorder point of Y3?"
 
-The assigned analysis question was:
+The bot can understand both short and detailed questions from users.
 
-What are the top 10 inventory items closest to their reorder point?
+---
 
-This was calculated using a simple gap formula:
+## 🌐 Live Demo
 
-text
-Copy
-Edit
-Gap = Quantity on Hand - Reorder Point
-The lower the gap, the closer the item is to needing reorder.
+🧪 You can interact with the deployed bot here:  
+**[http://myweb.usf.edu/~jaivinaygudiveka/mybot.html](http://myweb.usf.edu/~jaivinaygudiveka/mybot.html)**
 
-🛠️ Bot Architecture
-Start Node: Welcomes the user and guides the conversation.
+---
 
-Autonomous Node: Handles knowledge-based responses using the connected dataset.
+## 🚀 Tech Stack
 
-Knowledge Base: Built from a .csv file containing filtered inventory data (10 rows).
+- Botpress Cloud (Bot creation, Knowledge Base, Hosting)
+- HTML/CSS (Web page interface)
+- SQLite (for original SQL query)
+- DB Browser for SQLite (CSV export)
+- Cyberduck (for FTP upload)
 
-Instructions: The bot responds in a friendly, helpful tone and only based on the available data.
+---
 
-💬 Sample Questions to Try
-"Which item is closest to reorder?"
+## 📌 Notes
 
-"What is the stock for item 77?"
+- This chatbot was designed to be simple and user-friendly.
+- Users are greeted automatically and guided to ask inventory-related questions.
+- The project is suitable for business users monitoring stock levels.
 
-"Show the reorder point for item Y3"
-
-"How much quantity is available for item 113?"
-
-🌐 Deployment
-The bot is embedded in a custom HTML webpage (mybot.html)
-
-Hosted on a university web server via myweb.usf.edu
-
-Fully responsive and includes instructions, summary, and live chatbot
-
-✅ Deliverables
-SQL Query (.sql)
-
-CSV Data File (.csv)
-
-Webpage (mybot.html) with embedded chatbot - http://myweb.usf.edu/~jaivinaygudiveka/mybot.html
-
+---
