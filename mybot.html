@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reorder Inventory Assistant Bot</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #2b3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2b3e50;
+      margin-top: 30px;
+    }
+    p {
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2b3e50;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reorder Inventory Assistant Bot</h1>
+  </header>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>This bot helps answer questions about inventory items and reorder points using the provided dataset.</p>
+
+    <h2>Summary</h2>
+    <p>
+      The inventory data includes item numbers, descriptions, current stock, and reorder points. 
+      By comparing these values, we can find which items are close to needing restock.
+      This helps ensure better inventory control and avoids stockouts.
+    </p>
+
+    <h2>Dataset Overview</h2>
+    <p>
+      The data is structured to support analysis of inventory levels. It contains fields like quantity on hand and reorder thresholds,
+      which allow businesses to identify items approaching low stock and take timely action.
+    </p>
+
+    <h2>Try the Bot</h2>
+    <p>Ask the bot below about item stock levels, reorder gaps, or any item from the dataset.</p>
+    
+    <iframe src="https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/06/20/15/20250620155456-H5ZE1EXK.json"></iframe>
+  </main>
+
+  <footer>
+    Developed by Jaivinay Gudiveka | University of South Florida
+  </footer>
+
+</body>
+</html>
